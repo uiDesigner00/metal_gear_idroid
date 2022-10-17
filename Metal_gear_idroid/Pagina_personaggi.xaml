@@ -1,0 +1,54 @@
+﻿<Window x:Class="Metal_gear_idroid.Pagina_personaggi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+        xmlns:local="clr-namespace:Metal_gear_idroid"
+        mc:Ignorable="d"
+        Title="Pagina_personaggi" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/originals/5e/76/0a/5e760abee622ae6ddb37e7bb724014f9.jpg"></ImageBrush>
+        </StackPanel.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="CHARACTERS DATABASE" HorizontalAlignment="Left" Margin="30 20 0 0" FontSize="35" Foreground="#C41E3A" Background="Black" Width="400" TextAlignment="Center"></TextBlock>
+            <Button Name="pulsante_menu" Click="pulsante_menu_Click" Content="MAIN MENU" Width="130" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="20" Foreground="Black" Background="#C41E3A" Cursor="Hand" BorderBrush="Black" BorderThickness="2" Margin="450 20 0 0"></Button>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListBox Name="lista_personaggi" SelectionChanged="lista_personaggi_SelectionChanged" Width="400" Height="500" HorizontalAlignment="Left" Margin="30 20 0 0" FontSize="25" Foreground="#C41E3A" Background="Black" BorderBrush="Black" BorderThickness="2" Cursor="Hand">
+                <ListBoxItem Content="Venom Snake"></ListBoxItem>
+                <ListBoxItem Content="Kazuhira Miller"></ListBoxItem>
+                <ListBoxItem Content="Revolver Ocelot"></ListBoxItem>
+                <ListBoxItem Content="Huey Emmerich"></ListBoxItem>
+                <ListBoxItem Content="Liquid Snake"></ListBoxItem>
+                <ListBoxItem Content="Yevgeny Borisovitch Volgin"></ListBoxItem>
+                <ListBoxItem Content="Psycho Mantis"></ListBoxItem>
+                <ListBoxItem Content="Quiet"></ListBoxItem>
+                <ListBoxItem Content="Code Talker"></ListBoxItem>
+                <ListBoxItem Content="Skull Face"></ListBoxItem>
+                <ListBoxItem Content="Paz Ortega Andrade"></ListBoxItem>
+                <ListBoxItem Content="Zero"></ListBoxItem>
+                <ListBoxItem Content="Big Boss"></ListBoxItem>
+            </ListBox>
+            <TextBox Name="descrizione_personaggi" TextAlignment="Justify" TextWrapping="Wrap" FontSize="16" Width="500" Height="500" HorizontalAlignment="Left" Margin="800 20 0 0" Background="Transparent" Foreground="#C41E3A" FontWeight="Black" BorderBrush="Transparent" BorderThickness="0" IsReadOnly="True"></TextBox>
+        </Grid>
+        <Grid>
+            <!--aggiungere l'immagine in seguito-->
+            <Canvas Name="immagine_personaggio" Width="400" Height="300" Background="#C41E3A" HorizontalAlignment="Left" Margin="850 -200 0 0"></Canvas>
+        </Grid>
+    </StackPanel>
+</Window>

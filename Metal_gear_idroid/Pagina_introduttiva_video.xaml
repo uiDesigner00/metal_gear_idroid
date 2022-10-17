@@ -1,0 +1,23 @@
+﻿<Window x:Class="Metal_gear_idroid.Pagina_introduttiva_video"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+        xmlns:local="clr-namespace:Metal_gear_idroid"
+        mc:Ignorable="d"
+        Title="Pagina_introduttiva_video" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <MediaElement Name="sigla_metal_gear" MediaEnded="sigla_metal_gear_MediaEnded" LoadedBehavior="Manual" UnloadedBehavior="Manual"></MediaElement>
+            <Button Name="salta_filmato" Click="salta_filmato_Click" Content="SKIP" Background="#C41E3A" BorderBrush="Black" BorderThickness="2" FontSize="20" Width="130" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="40 -750 0 0" Cursor="Hand"></Button>
+        </Grid>
+    </StackPanel>
+</Window>

@@ -1,0 +1,52 @@
+﻿<Window x:Class="Metal_gear_idroid.Pagina_luoghi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+        xmlns:local="clr-namespace:Metal_gear_idroid"
+        mc:Ignorable="d"
+        Title="Pagina_luoghi" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="https://wallpapercave.com/wp/wp2752327.jpg"></ImageBrush>
+        </StackPanel.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="PLACES DATABASE" HorizontalAlignment="Left" Margin="30 20 0 0" FontSize="35" Foreground="#C41E3A"></TextBlock>
+            <Button Name="pulsante_menu" Click="pulsante_menu_Click" Content="MAIN MENU" Width="130" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="20" Foreground="Black" Background="#C41E3A" Cursor="Hand" BorderBrush="Black" BorderThickness="2" Margin="380 20 0 0"></Button>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListBox Name="lista_luoghi" SelectionChanged="lista_luoghi_SelectionChanged" Width="400" Height="600" HorizontalAlignment="Left" Margin="30 20 0 0" Background="Transparent" FontSize="20" Foreground="#C41E3A" BorderBrush="Transparent" BorderThickness="0" Cursor="Hand">
+                <ListBoxItem Content="Aerial Command Center"></ListBoxItem>
+                <ListBoxItem Content="Afghanistan"></ListBoxItem>
+                <ListBoxItem Content="Angola-Zaire border region"></ListBoxItem>
+                <ListBoxItem Content="Cyprus Lighthouse"></ListBoxItem>
+                <ListBoxItem Content="Dhekelia SBA Memorial Hospital"></ListBoxItem>
+                <ListBoxItem Content="Forward Operating Base"></ListBoxItem>
+                <ListBoxItem Content="Mother Base (Seychelles)"></ListBoxItem>
+            </ListBox>
+        </Grid>
+        <Grid>
+            <Canvas Width="300" Height="300" HorizontalAlignment="Left" Background="#C41E3A" Margin="30 -320 0 0"></Canvas>
+        </Grid>
+        <Grid>
+            <TextBox Name="descrizione_luoghi" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Width="400" Height="500" HorizontalAlignment="Left" Background="Transparent" FontSize="20" Foreground="#C41E3A" FontWeight="Black" BorderBrush="Transparent" BorderThickness="0" Margin="800 -620 0 0" IsReadOnly="True"></TextBox>
+        </Grid>
+        <Grid>
+            <TextBlock Text="PLACES DESCRIPTION" HorizontalAlignment="Left" Margin="800 -650 0 0" FontSize="35" Foreground="#C41E3A"></TextBlock>
+        </Grid>
+    </StackPanel>
+</Window>

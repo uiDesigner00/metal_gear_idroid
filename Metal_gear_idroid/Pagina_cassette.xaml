@@ -1,0 +1,136 @@
+﻿<Window x:Class="Metal_gear_idroid.Pagina_cassette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+        xmlns:local="clr-namespace:Metal_gear_idroid"
+        mc:Ignorable="d"
+        Title="Pagina_cassette" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush ImageSource="https://cdn.wallpapersafari.com/37/5/HW4vPn.jpg"></ImageBrush>
+        </StackPanel.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Text="CASSETTE TAPES" HorizontalAlignment="Left" Margin="30 20 0 0" FontSize="35" Foreground="#C41E3A" Background="Black" Width="270" TextAlignment="Center"></TextBlock>
+            <Button Name="torna_menu_principale" Click="torna_menu_principale_Click" Content="MAIN MENU" Width="130" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="20" Foreground="Black" Background="#C41E3A" Cursor="Hand" BorderBrush="Black" BorderThickness="2" Margin="330 20 0 0"></Button>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListBox Name="elenco_cassette" PreviewMouseDown="elenco_cassette_PreviewMouseDown" SelectionChanged="elenco_cassette_SelectionChanged" Width="500" Height="600" HorizontalAlignment="Left" Margin="30 20 0 0" Background="Black" Foreground="#C41E3A" BorderBrush="#C41E3A" BorderThickness="2" FontSize="20" HorizontalContentAlignment="Left" Cursor="Hand">
+                <ListBoxItem Content="OCELOT'S BRIEFING 1"></ListBoxItem>
+                <ListBoxItem Content="OCELOT'S BRIEFING 2"></ListBoxItem>
+                <ListBoxItem Content="OCELOT'S BRIEFING 3"></ListBoxItem>
+                <ListBoxItem Content="AFGHANISTAN TODAY 1"></ListBoxItem>
+                <ListBoxItem Content="THE MAN ON FIRE"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE 1"></ListBoxItem>
+                <ListBoxItem Content="AFGHANISTAN TODAY 2"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE 2"></ListBoxItem>
+                <ListBoxItem Content="WHAT HAPPENED TO OLD MOTHER BASE MEMBERS"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE 3"></ListBoxItem>
+                <ListBoxItem Content="AFGHANISTAN TODAY 3"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE 4"></ListBoxItem>
+                <ListBoxItem Content="QUIET 1"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE 5"></ListBoxItem>
+                <ListBoxItem Content="QUIET 2"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 1"></ListBoxItem>
+                <ListBoxItem Content="AFRICA TODAY 1"></ListBoxItem>
+                <ListBoxItem Content="QUIET 3"></ListBoxItem>
+                <ListBoxItem Content="QUIET 4"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 2"></ListBoxItem>
+                <ListBoxItem Content="AFRICA TODAY 2"></ListBoxItem>
+                <ListBoxItem Content="QUIET 5"></ListBoxItem>
+                <ListBoxItem Content="CIPHER'S CARGO 1"></ListBoxItem>
+                <ListBoxItem Content="AFRICA TODAY 3"></ListBoxItem>
+                <ListBoxItem Content="CIPHER'S CARGO 2"></ListBoxItem>
+                <ListBoxItem Content="AFRICA TODAY 4"></ListBoxItem>
+                <ListBoxItem Content="PAZ'S DIARY CONTINUED 1"></ListBoxItem>
+                <ListBoxItem Content="THE FACTORY OF THE DEAD"></ListBoxItem>
+                <ListBoxItem Content="THE WHITE MAMBA 1"></ListBoxItem>
+                <ListBoxItem Content="THE WHITE MAMBA 2"></ListBoxItem>
+                <ListBoxItem Content="PAZ'S DIARY CONTINUED 2"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE SUPPLEMENTAL 1"></ListBoxItem>
+                <ListBoxItem Content="AT MOTHER BASE SUPPLEMENTAL 2"></ListBoxItem>
+                <ListBoxItem Content="VOCAL CORD PARASITES 1"></ListBoxItem>
+                <ListBoxItem Content="VOCAL CORD PARASITES 2"></ListBoxItem>
+                <ListBoxItem Content="METALLIC ARCHAEA 1"></ListBoxItem>
+                <ListBoxItem Content="METALLIC ARCHAEA 2"></ListBoxItem>
+                <ListBoxItem Content="SAHELANTHROPUS 1"></ListBoxItem>
+                <ListBoxItem Content="SAHELANTHROPUS 2"></ListBoxItem>
+                <ListBoxItem Content="SAHELANTHROPUS 3"></ListBoxItem>
+                <ListBoxItem Content="METALLIC ARCHAEA 3"></ListBoxItem>
+                <ListBoxItem Content="CODE TALKER AND HIS RESEARCH 1"></ListBoxItem>
+                <ListBoxItem Content="SKULL FACE'S OBJECTIVE 1"></ListBoxItem>
+                <ListBoxItem Content="PAZ'S DIARY CONTINUED 3"></ListBoxItem>
+                <ListBoxItem Content="THE MAN ON FIRE 2"></ListBoxItem>
+                <ListBoxItem Content="METALLIC ARCHAEA 4"></ListBoxItem>
+                <ListBoxItem Content="CODE TALKER AND HIS RESEARCH 2"></ListBoxItem>
+                <ListBoxItem Content="SKULL FACE'S OBJECTIVE 2"></ListBoxItem>
+                <ListBoxItem Content="THE HAMBURGHERS OF KAZUHIRA MILLER 1"></ListBoxItem>
+                <ListBoxItem Content="CODE TALKER AND HIS RESEARCH 3"></ListBoxItem>
+                <ListBoxItem Content="SKULL FACE'S OBJECTIVE 3"></ListBoxItem>
+                <ListBoxItem Content="THE MAN ON FIRE 3"></ListBoxItem>
+                <ListBoxItem Content="VOCAL CORD PARASITES 3"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 3"></ListBoxItem>
+                <ListBoxItem Content="CODE TALKER AND HIS RESEARCH 4"></ListBoxItem>
+                <ListBoxItem Content="SKULL FACE'S OBJECTIVE 4"></ListBoxItem>
+                <ListBoxItem Content="THE HAMBURGHERS OF KAZUHIRA MILLER 2"></ListBoxItem>
+                <ListBoxItem Content="THE CHILDREN ESCAPE 1"></ListBoxItem>
+                <ListBoxItem Content="THE CHILDREN ESCAPE 2"></ListBoxItem>
+                <ListBoxItem Content="THE CHILDREN ESCAPE 3"></ListBoxItem>
+                <ListBoxItem Content="THE CHILDREN ESCAPE 4"></ListBoxItem>
+                <ListBoxItem Content="THE CHILDREN ESCAPE 5"></ListBoxItem>
+                <ListBoxItem Content="INFORMANT'S REPORT"></ListBoxItem>
+                <ListBoxItem Content="THE HAMBURGHERS OF KAZUHIRA MILLER 3"></ListBoxItem>
+                <ListBoxItem Content="PAZ'S DIARY CONTINUED 4"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 4"></ListBoxItem>
+                <ListBoxItem Content="THE WHITE MAMBA 3"></ListBoxItem>
+                <ListBoxItem Content="SKULL FACE'S OBJECTIVE 5"></ListBoxItem>
+                <ListBoxItem Content="THE CHILDREN ESCAPE 6"></ListBoxItem>
+                <ListBoxItem Content="THE HAMBURGHERS OF KAZUHIRA MILLER 4"></ListBoxItem>
+                <ListBoxItem Content="WHAT HAPPENED IN THE LABORATORY 1"></ListBoxItem>
+                <ListBoxItem Content="WHAT HAPPENED IN THE LABORATORY 2"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 5"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 6"></ListBoxItem>
+                <ListBoxItem Content="QUESTIONING HUEY 7"></ListBoxItem>
+                <ListBoxItem Content="CODE TALKER AND HIS RESEARCH 5"></ListBoxItem>
+                <ListBoxItem Content="WHAT HAPPENED IN THE LABORATORY 3"></ListBoxItem>
+                <ListBoxItem Content="QUIET 6"></ListBoxItem>
+                <ListBoxItem Content="QUIET 7"></ListBoxItem>
+                <ListBoxItem Content="TRUTH RECORDS - PART 1"></ListBoxItem>
+                <ListBoxItem Content="TRUTH RECORDS - PART 2"></ListBoxItem>
+            </ListBox>
+            <Canvas Width="600" Height="500" HorizontalAlignment="Left" Background="Black" Margin="700 -95 0 0">
+                <Image Source="https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-phantom-pain/3/31/Screen_Shot_2015-08-27_at_11.26.36_AM.jpg" Width="600" Height="500"></Image>
+                <MediaElement Name="cassetta_prodotta" MediaOpened="cassetta_prodotta_MediaOpened" MediaEnded="cassetta_prodotta_MediaEnded" UnloadedBehavior="Manual"></MediaElement>
+            </Canvas>
+            <TextBlock Name="avviso_cassetta" Text="SELECT A TAPE" HorizontalAlignment="Left" Margin="700 -35 0 0" FontSize="17" Foreground="Black" FontWeight="Black" Background="Transparent" TextAlignment="Center"></TextBlock>
+        </Grid>
+        <Grid Width="600" Height="100" Background="Transparent" Margin="470 -50 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Name="cassetta_precedente" Click="cassetta_precedente_Click" Content="PREVIOUS" Width="90" Height="40" Background="#C41E3A" Foreground="Black" BorderBrush="Black" BorderThickness="2" Margin="-250 -40 0 0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Cursor="Hand" FontSize="15"></Button>
+            <Button Name="cassetta_pausa" Click="cassetta_pausa_Click" Content="PAUSE" Width="90" Height="40" Background="#C41E3A" Foreground="Black" BorderBrush="Black" BorderThickness="2" Margin="-60 -40 0 0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Cursor="Hand" FontSize="15"></Button>
+            <Button Name="cassetta_riprendi" Click="cassetta_riprendi_Click" Content="RESUME" Width="90" Height="40" Background="#C41E3A" Foreground="Black" BorderBrush="Black" BorderThickness="2" Margin="135 -40 0 0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Cursor="Hand" FontSize="15"></Button>
+            <Button Name="casssetta_successiva" Click="casssetta_successiva_Click" Content="NEXT" Width="90" Height="40" Background="#C41E3A" Foreground="Black" BorderBrush="Black" BorderThickness="2" Margin="325 -40 0 0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Cursor="Hand" FontSize="15"></Button>
+            <Slider Name="metraggio_cassetta" ValueChanged="metraggio_cassetta_ValueChanged" Thumb.DragStarted="metraggio_cassetta_DragStarted" Thumb.DragCompleted="metraggio_cassetta_DragCompleted" Width="500" Height="30" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="20 70 0 0" Background="Black"></Slider>
+            <TextBox Name="tempo_cassetta" HorizontalAlignment="Left" Width="200" Height="30" Background="Black" Foreground="#C41E3A" BorderBrush="Transparent" BorderThickness="0" Margin="-160 66 0 0" IsReadOnly="True" TextAlignment="Center" FontSize="17"></TextBox>
+        </Grid>
+    </StackPanel>
+</Window>

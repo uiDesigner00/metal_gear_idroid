@@ -1,0 +1,26 @@
+﻿
+    <Window x:Class="Metal_gear_idroid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+        xmlns:local="clr-namespace:Metal_gear_idroid"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <MediaElement Name="menu_metal_gear" LoadedBehavior="Manual" UnloadedBehavior="Manual"></MediaElement>
+            <Button Name="pulsante_start" Click="pulsante_start_Click" Content="START" FontSize="20" Background="#C41E3A" Width="130" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="30 -750 0 0" BorderBrush="Black" BorderThickness="2" Cursor="Hand"></Button>
+            <Button Name="pulsante_exit" Click="pulsante_exit_Click" Content="EXIT" FontSize="20" Background="#C41E3A" Width="130" Height="50" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="30 -630 0 0" BorderBrush="Black" BorderThickness="2" Cursor="Hand"></Button>
+            <TextBlock Text="METAL GEAR: IDROID" HorizontalAlignment="Center" Margin="0 30 0 0" FontSize="35" Foreground="#C41E3A"></TextBlock>
+        </Grid>
+    </StackPanel>
+</Window>
